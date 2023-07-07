@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <h2 align="center" style="color: green;">Working with HTML form Elements</h2>
+    <hr color="red" size="4" />
+     <form action="" method="">
+        <div style="width:80%; margin:auto;">
+            <fieldset>
+                <legend>Registration Form</legend>
+                <table border="1px" cellspacing="0px" 
+                cellpadding="3px" width="90%" align="center">
+                    <tr>
+                        <td>Full Name:</td>
+                        <td><input type="text" name="txtName"/></td>
+                    </tr>
+                    <tr>
+                        <td>User Name:</td>
+                        <td><input type="text" name="txtUserName"/></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="password" name="txtPassword" /></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="txtEmail" /></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td>
+                            <input type="radio" name="txtGender" value="m" checked />Male
+                            <input type="radio" name="txtGender" value="f" />Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hobbies:</td>
+                        <td>
+                            <input type="checkbox" name="hobbies[]" value="1" checked />Reading
+                            <input type="checkbox" name="hobbies[]" value="2" />Travelling<br/>
+                            <input type="checkbox" name="hobbies[]" value="3" />Cricket
+                            <input type="checkbox" name="hobbies[]" value="4" />Dancing
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td>
+                            <select name="city">
+                                <option value="-1">--Select City--</option>
+                                <optgroup label="Bihar">
+                                    <option value="1">Patna</option>
+                                    <option value="2">Gaya</option>
+                                    <option value="3">Bhagalpur</option>
+                               </optgroup>
+                               <optgroup label="UP">
+                                    <option value="4">Lucknow</option>
+                                    <option value="5">Agra</option>
+                                    <option value="6">Noida</option>
+                               </optgroup>
+                               <optgroup label="MP">
+                                    <option value="7">Bhopal</option>
+                                    <option value="8">Jabalpur</option>
+                                    <option value="9">Gwalior</option>
+                                </optgroup>
+                                <optgroup label="Punjab">
+                                    <option value="10">Chandigarh</option>
+                                    <option value="11">Bhatinda</option>
+                                    <option value="12">Amritsar</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Preferred Job City:</td>
+                        <td>
+                            <select name="jobcity[]" multiple>                               
+                                <optgroup label="Bihar">
+                                    <option value="1">Patna</option>
+                                    <option value="2">Gaya</option>
+                                    <option value="3">Bhagalpur</option>
+                               </optgroup>
+                               <optgroup label="UP">
+                                    <option value="4">Lucknow</option>
+                                    <option value="5">Agra</option>
+                                    <option value="6">Noida</option>
+                               </optgroup>
+                               <optgroup label="MP">
+                                    <option value="7">Bhopal</option>
+                                    <option value="8">Jabalpur</option>
+                                    <option value="9">Gwalior</option>
+                                </optgroup>
+                                <optgroup label="Punjab">
+                                    <option value="10">Chandigarh</option>
+                                    <option value="11">Bhatinda</option>
+                                    <option value="12">Amritsar</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>                        
+                        <td colspan="2" align="right">
+                            <input type="checkbox" >I accept 
+                                                    <a href="#">Terms and Conditions</a>
+                            <input type="submit"  value="Register"/>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>        
+     </form>
+</body>
+</html>
